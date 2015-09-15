@@ -82,7 +82,8 @@ class FeatureType extends AbstractType
     {
         $resolver
             ->setDefaults([
-                'data_class' => FormFeature::class,
+                'data_class' => 'Vend\PheatBundle\Entity\FormFeature',
+                'csrf_protection' => false, //JOMYUT
             ]);
     }
 }
