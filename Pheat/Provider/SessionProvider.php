@@ -61,7 +61,7 @@ class SessionProvider extends Provider implements WritableProviderInterface, Con
     public function setFeature(ContextInterface $context, FeatureInterface $feature)
     {
         $this->bag->set($feature->getName(), $feature->getConfiguration());
-        $this->session->save();
+        //$this->session->save();
     }
 
     /**
